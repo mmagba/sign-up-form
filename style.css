@@ -1,17 +1,14 @@
 * {
     box-sizing: border-box;
-    
 
 
 }
 
 body {
     display: flex;
-    padding: 0px;
+    flex-direction: row;
     margin: 0px;
-
-
-
+    font-family: Arial, sans-serif;
 }
 
 .leaf {
@@ -19,12 +16,16 @@ body {
     height: 99vh;
     position: relative;
     z-index: -1;
+    min-width: 100%;
+    min-height: 100%
 }
 
 .right-side {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+
 }
 
 .left-side {
@@ -60,7 +61,6 @@ a {
     max-height: 100%;
     max-width: 100%;
     opacity: 100%;
-
 }
 
 .logo-container .odin-text {
@@ -72,5 +72,81 @@ a {
 @font-face {
     font-family: norse-font;
     src: url(Norse-Bold.otf);
-  }
-  
+}
+
+.first-third {
+
+    background-color: #F5F5F5;
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.second-third {
+    flex: 1;
+    padding: 0 50px;
+    padding-bottom: 30px;
+
+}
+
+.third-third {
+    background-color: #F5F5F5;
+    flex: 1;
+    padding: 50px;
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 70%;
+    column-gap: 5px;
+    row-gap: 10px;
+
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 300px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+button {
+    background-color: #596D48;
+    font-size: 1.2rem;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+a.log-in {
+    display: inline;
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+input:invalid {
+    border-color: lightcoral;
+}
+
+input:focus {
+    outline: none;
+    border-color: lightblue;
+}
