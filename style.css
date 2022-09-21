@@ -107,7 +107,7 @@ form div {
 
 form {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     width: 70%;
     column-gap: 5px;
@@ -146,7 +146,12 @@ input:invalid {
     border-color: lightcoral;
 }
 
+
 input:focus {
     outline: none;
     border-color: lightblue;
+}
+
+#my-form div {
+    margin: 0.5rem;
 }
